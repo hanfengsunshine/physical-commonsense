@@ -31,22 +31,22 @@ set -x
 set -e
 
 # First stop: GloVe town.
-mkdir -p data/glove/
+#mkdir -p data/glove/
 if [ ! -f data/glove/vocab-pc.glove.840B.300d.txt.npz ]; then
     curl https://homes.cs.washington.edu/~mbforbes/physical-commonsense/vocab-pc.glove.840B.300d.txt.npz > data/glove/vocab-pc.glove.840B.300d.txt.npz
 fi
 
-# Next up: Dependency Embeddings.
-mkdir -p data/dep-embs/
-if [ ! -f data/dep-embs/vocab-pc.dep-embs.npz ]; then
-    curl https://homes.cs.washington.edu/~mbforbes/physical-commonsense/vocab-pc.dep-embs.npz > data/dep-embs/vocab-pc.dep-embs.npz
-fi
+golv# Next up: Dependency Embeddings.
+#mkdir -p data/dep-embs/
+#if [ ! -f data/dep-embs/vocab-pc.dep-embs.npz ]; then
+#    curl https://homes.cs.washington.edu/~mbforbes/physical-commonsense/vocab-pc.dep-embs.npz > data/dep-embs/vocab-pc.dep-embs.npz
+#fi
 
 # Then: ELMo.
-mkdir -p data/elmo/
-if [ ! -f data/elmo/sentences.elmo.npz ]; then
-    curl https://homes.cs.washington.edu/~mbforbes/physical-commonsense/sentences.elmo.npz > data/elmo/sentences.elmo.npz
-fi
+#mkdir -p data/elmo/
+#if [ ! -f data/elmo/sentences.elmo.npz ]; then
+#    curl https://homes.cs.washington.edu/~mbforbes/physical-commonsense/sentences.elmo.npz > data/elmo/sentences.elmo.npz
+#fi
 
 # Make some more directories we'll need.
-mkdir -p data/results/graphs/
+#mkdir -p data/results/graphs/
